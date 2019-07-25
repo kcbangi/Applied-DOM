@@ -69,7 +69,7 @@
    */
 
   btn1.addEventListener("click", function() {
-    setMyLightGreen.apply(btn1);
+    setMyLightGreen.apply(this);
   });
 
   /*
@@ -104,7 +104,7 @@
    */
 
   btn4.addEventListener("click", function(event) {
-    setMyLightClass.apply(btn4, [event, "light-green"]);
+    setMyLightClass.apply(this, [event, "light-green"]);
   });
 
   /*
@@ -132,7 +132,7 @@
    */
 
   btn6.addEventListener("click", function() {
-    setMyLightGreen.call(btn6);
+    setMyLightGreen.call(this);
   });
 
   /*
@@ -160,7 +160,7 @@
    */
 
   btn8.addEventListener("click", function(event) {
-    setMyLightClass.call(btn8, event, "light-green");
+    setMyLightClass.call(this, event, "light-green");
   });
 
   /*
